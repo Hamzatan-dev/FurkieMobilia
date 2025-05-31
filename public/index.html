@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeubelHuis - Moderne Meubels voor Thuis</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">MeubelHuis</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categorieën</a></li>
+                <li><a href="#products">Producten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Moderne Meubels voor Uw Thuis</h1>
+            <p>Ontdek onze collectie van hoogwaardige, stijlvolle meubels voor elke ruimte</p>
+            <a href="#products" class="cta-button">Bekijk Collectie</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Categorieën</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterProducts('woonkamer')">
+                    <div class="category-icon">🛋️</div>
+                    <h3>Woonkamer</h3>
+                    <p>Banken, fauteuils en salontafels</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('slaapkamer')">
+                    <div class="category-icon">🛏️</div>
+                    <h3>Slaapkamer</h3>
+                    <p>Bedden, nachtkastjes en kasten</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('eetkamer')">
+                    <div class="category-icon">🪑</div>
+                    <h3>Eetkamer</h3>
+                    <p>Eettafels en stoelen</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('kantoor')">
+                    <div class="category-icon">🖥️</div>
+                    <h3>Kantoor</h3>
+                    <p>Bureau's en bureaustolen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Onze Producten</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MeubelHuis</h3>
+                    <p>Uw partner voor hoogwaardige meubels en interieurontwerp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Klantenservice</h3>
+                    <ul>
+                        <li><a href="#">Veelgestelde vragen</a></li>
+                        <li><a href="#">Retourneren</a></li>
+                        <li><a href="#">Levering</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Over Ons</h3>
+                    <ul>
+                        <li><a href="#">Ons verhaal</a></li>
+                        <li><a href="#">Carrière</a></li>
+                        <li><a href="#">Duurzaamheid</a></li>
+                        <li><a href="#">Pers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Volg Ons</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MeubelHuis. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="functions/main.js"></script>
+</body>
+
+</html>
